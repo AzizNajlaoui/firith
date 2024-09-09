@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+.hero{
+    height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    .bg{
+        position: absolute;
+        width: 100%;
+        z-index: -10;
+        overflow: clip;
+        height: 100%;
+        object-fit: cover;
+    }
+    .dewdrop:hover{
+        scale: 1.05;
+        cursor: pointer;
+    }
+    .dewdrop{
+        max-width: 800px;
+        min-width: 300px;
+        width: 80vw;
+        transition: 0.15s;
+    }
+
+    button{
+        font-size: 1.2rem;
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+    }
+   
+
+    
+}
+
+.hero-footer{
+    position: absolute;
+    bottom:30%;
+    
+}
+
+
+@media (min-width:$md) {
+    .hero{
+        height: 95vh;
+        button{
+            font-size: 1.5rem;
+        }
+        
+    }
+    .hero-footer{
+        position: absolute;
+        bottom:5%;
+    }
+
+   
+}

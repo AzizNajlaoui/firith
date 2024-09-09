@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+.container{
+    margin-inline:auto;
+}
+
+@media (min-width:$sm) {
+    .container{
+        max-width :$md; 
+
+    }
+}
+@media (min-width:$md) {
+    .container{
+        max-width : $md; 
+
+    }
+}
+
+@media (min-width:$lg) {
+    .container{
+        max-width : $lg; 
+
+    }
+}
+@media (min-width:$xl) {
+    .container{
+        max-width : $xl; 
+
+    }
+}
+
+@media (min-width:$xxl) {
+    .container{
+        max-width : $xxl; 
+
+    }
+}
+
+
+/***/ 
+
+.flex{
+    display: flex;
+}
+
+
+
+
+
+

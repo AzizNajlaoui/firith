@@ -1,0 +1,82 @@
+
+
+@use 'variables' as *;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    .contact{
+        background-color: $yellow;
+
+     .container{
+        display: flex;
+        flex-direction: column;
+        padding: 3em 4em ;
+        align-items: flex-start;
+    
+
+        h1{
+            font-size: 3.5rem;
+            font-weight: bolder;
+            
+        }
+
+        p{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            padding-block:1em;
+        }
+
+        .icons{
+            flex-wrap: wrap !important;
+            border: none;
+            padding-bottom: 1em;
+            padding-left: 0 !important;
+            justify-content: center !important;
+            cursor: pointer;
+            i{
+                color: black;
+                font-size: 3.5rem;
+                
+            }
+            i:hover{
+                color:$red;
+            }
+            
+        }
+
+        button{
+            background-color: $red;
+            color: white;
+            padding: 0.8em 0.5em;
+            font-size:1.5rem;
+            border-radius: 0.5em;
+            text-wrap: nowrap;
+        }
+        button:hover{
+            color: black;
+            background-color:$white;
+            
+        }
+        input{
+            padding: 2em;
+            width:70%;
+            border: 0;
+            box-shadow: 10px 10px 0 black;
+            border: 5px black solid;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .mail{
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            width: 100%;
+            max-width: 800px;
+        }
+     }  
+    }
+}
