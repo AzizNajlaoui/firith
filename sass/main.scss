@@ -8,8 +8,14 @@
 @use 'footer';
 
 /** some fix*/
-/* *{
-    /*outline: 1px solid red; }*/
+ *{
+    outline: 1px solid red; }
+
+
+
+
+
+
 body{
     overflow-x: hidden !important;
 }
@@ -48,4 +54,33 @@ body{
         
     }
 }
+}
+
+@media (max-width:428px) {
+    html{
+        
+        margin-inline: auto;
+        overflow-x: hidden !important;
+    }
+    header{
+        img{
+            width:180px;
+        }
+    }
+
+    .hero{
+        img{
+            width: 50vw;
+        }
+    }
+}
+@media (max-width:300px){
+    html{
+        font-size: 8px;
+    }
+    header{
+        img{
+            width: 150px;
+        }
+    }
 }
